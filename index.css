@@ -1,0 +1,40 @@
+body{
+    margin: 0cm;
+}
+.top-pane{
+    background-color:rgb(60, 62, 68);
+}
+.pane{
+    height: 60vh;
+    display: flex;
+}
+.editor-container{
+    flex-grow:1;
+    flex-basis: 0cm;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    background-color:rgb(60, 62, 68);
+}
+.editor-title{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34, 36, 39);
+    color: aliceblue;
+    padding: .5rem .5rem .5rem 1rem;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: 0.5 rem;
+}
+.codeMirror{
+    height:100% !important
+}
+.code-mirror-wrapper{
+    flex-grow: 2;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    overflow: hidden;
+}
+
+button:hover{
+    cursor: grab;
+}
