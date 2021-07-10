@@ -1,0 +1,85 @@
+body{
+    margin: 0cm;
+}
+
+.header{ 
+     /*for the header element, we seet the width to be 100% of entire screen. we block the position using fixed posn and keep z index as 1 for it to be present on the screen throughout the web page*/
+    width: 100%; 
+    height: 65px;
+    display: inline-block;
+    margin: 0cm auto;
+    background-color: #101010;
+    position:fixed;
+    z-index: 1;
+}
+.name{
+    /*this sets font style to the team name, and also places it in the middle of head tag*/
+    font-family:'serif','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    vertical-align: middle;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+.top-pane{
+    /*set to be below the head tag always using z index. also sets background color*/
+    background-color:rgb(60, 62, 68);
+    z-index: 0;
+    position: relative;
+    top: 65px;
+    width: 100%;
+    
+}
+.pane{
+    /*sets output panel to have a 100% width and display format at flex*/
+    height:60vh;
+    display: flex; 
+}
+.editor-container{
+    flex-grow:1;
+    flex-basis: 0cm;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    background-color:rgb(60, 62, 68);
+}
+.editor-container:hover{
+    flex-grow:1;
+    flex-basis: 0cm;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    background-color:rgb(80, 84, 95);
+}
+.editor-container.collapsed{
+    flex-grow: 0;
+}
+.editor-container.collapsed.CodeMirror-scroll{
+    position: absolute;
+}
+.editor-title{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34, 36, 39);
+    color: aliceblue;
+    padding: .5rem .5rem .5rem 1rem;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: 0.5 rem;
+}
+
+.codeMirror{
+    height:100% !important
+}
+.code-mirror-wrapper{
+    flex-grow: 2;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    overflow: hidden;
+    
+}
+
+button:hover{
+    /*changes cursor to hover when hovered upon the button*/
+    cursor: grab;
+}
